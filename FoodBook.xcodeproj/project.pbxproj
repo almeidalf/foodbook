@@ -54,6 +54,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A9CA0D49250BBAD6009019AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A9CA0D4A250BBAE0009019AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9D6A8E625026BE400180A49 /* Main.storyboard */,
+				A9D6A8EC25026BE900180A49 /* Assets.xcassets */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A9CA0D4B250BBAF1009019AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A9D6A8E425026BE400180A49 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		A9D6A8D425026BE400180A49 = {
 			isa = PBXGroup;
 			children = (
@@ -75,25 +99,17 @@
 		A9D6A8DF25026BE400180A49 /* FoodBook */ = {
 			isa = PBXGroup;
 			children = (
+				A9CA0D4B250BBAF1009019AC /* Controller */,
+				A9CA0D4A250BBAE0009019AC /* View */,
+				A9CA0D49250BBAD6009019AC /* Model */,
 				A9D6A8F8250270C600180A49 /* WebService */,
-				A9D6A8F72502709200180A49 /* Classes */,
 				A9D6A8E025026BE400180A49 /* AppDelegate.swift */,
 				A9D6A8E225026BE400180A49 /* SceneDelegate.swift */,
-				A9D6A8E425026BE400180A49 /* ViewController.swift */,
-				A9D6A8E625026BE400180A49 /* Main.storyboard */,
-				A9D6A8EC25026BE900180A49 /* Assets.xcassets */,
 				A9D6A8EE25026BE900180A49 /* LaunchScreen.storyboard */,
 				A9D6A8F125026BE900180A49 /* Info.plist */,
 				A9D6A8E925026BE400180A49 /* FoodBook.xcdatamodeld */,
 			);
 			path = FoodBook;
-			sourceTree = "<group>";
-		};
-		A9D6A8F72502709200180A49 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Classes;
 			sourceTree = "<group>";
 		};
 		A9D6A8F8250270C600180A49 /* WebService */ = {
