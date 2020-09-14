@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A90336E3250FA7CC00BA0042 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90336E2250FA7CC00BA0042 /* LoginController.swift */; };
 		A9D6A8E125026BE400180A49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D6A8E025026BE400180A49 /* AppDelegate.swift */; };
 		A9D6A8E325026BE400180A49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D6A8E225026BE400180A49 /* SceneDelegate.swift */; };
 		A9D6A8E525026BE400180A49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D6A8E425026BE400180A49 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		95BE34A0CD00AF284ABEB651 /* Pods_FoodBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3152E0E8091D667D0A254BC /* Pods-FoodBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodBook.debug.xcconfig"; path = "Target Support Files/Pods-FoodBook/Pods-FoodBook.debug.xcconfig"; sourceTree = "<group>"; };
+		A90336E2250FA7CC00BA0042 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		A9D6A8DD25026BE400180A49 /* FoodBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D6A8E025026BE400180A49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9D6A8E225026BE400180A49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				A9D6A8E425026BE400180A49 /* ViewController.swift */,
+				A90336E2250FA7CC00BA0042 /* LoginController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9D6A8FA250270F200180A49 /* ServiceParameter.swift in Sources */,
+				A90336E3250FA7CC00BA0042 /* LoginController.swift in Sources */,
 				A9D6A8EB25026BE400180A49 /* FoodBook.xcdatamodeld in Sources */,
 				A9D6A8E525026BE400180A49 /* ViewController.swift in Sources */,
 				A9D6A8E125026BE400180A49 /* AppDelegate.swift in Sources */,
