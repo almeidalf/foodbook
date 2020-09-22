@@ -1,14 +1,14 @@
 //
-//  ViewController.swift
+//  SignUpViewController.swift
 //  FoodBook
 //
-//  Created by Reply on 04/09/20.
+//  Created by Reply on 22/09/20.
 //  Copyright © 2020 FoodBook. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class SignUpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,4 +17,3 @@ class ViewController: UIViewController {
 
 
 }
-

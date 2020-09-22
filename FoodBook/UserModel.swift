@@ -7,20 +7,32 @@
 //
 
 import Foundation
-import ObjectMapper
 
-class UserModel: Mappable{
+class UserModel {
     
-    var usuario: String?
-    var senha: String?
+struct UsuarioLoginResponse: Decodable {
+    var token: String
+    var expiration: String
+    var refreshToken: String
+    var expirationRefreshToken: String
     
-    required convenience init?(map: Map) {
-        self.init(map: map)
+    init(_ token: String,_ expiration:String,_ refresh:String,_ expirationT:String) {
+        self.token = token
+        self.expiration = expiration
+        self.refreshToken = refresh
+        self.expirationRefreshToken = expirationT
     }
+}
+
+struct UsuarioCadastro: Decodable {
+    var nome: String
+    var email: String
+    var senha: String
     
-    func mapping(map: Map) {
-        usuario <- map["usuario"]
-        senha <- map["senha"]
-        
+    init(_ nome: String,_ email:String,_ senha:String) {
+        self.nome = nome
+        self.email = email
+        self.senha = senha
     }
+}
 }
