@@ -10,6 +10,9 @@
 		A90480C825182E3700265362 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90480C725182E3700265362 /* HomeViewController.swift */; };
 		A90480CA25182E4700265362 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90480C925182E4700265362 /* LoginViewController.swift */; };
 		A90480CC25182E5D00265362 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90480CB25182E5D00265362 /* UserModel.swift */; };
+		A928F08E2518D0BA00704E50 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A928F08D2518D0BA00704E50 /* LoginVM.swift */; };
+		A928F0902518D0CF00704E50 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A928F08F2518D0CF00704E50 /* HomeVM.swift */; };
+		A9773EBF25199DF8000A51D4 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9773EBE25199DF8000A51D4 /* Protocols.swift */; };
 		A9D6A8E125026BE400180A49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D6A8E025026BE400180A49 /* AppDelegate.swift */; };
 		A9D6A8E325026BE400180A49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D6A8E225026BE400180A49 /* SceneDelegate.swift */; };
 		A9D6A8E525026BE400180A49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D6A8E425026BE400180A49 /* ViewController.swift */; };
@@ -27,6 +30,9 @@
 		A90480C725182E3700265362 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A90480C925182E4700265362 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A90480CB25182E5D00265362 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		A928F08D2518D0BA00704E50 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
+		A928F08F2518D0CF00704E50 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		A9773EBE25199DF8000A51D4 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		A9D6A8DD25026BE400180A49 /* FoodBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D6A8E025026BE400180A49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9D6A8E225026BE400180A49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +66,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A928F08C2518D09F00704E50 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A928F08D2518D0BA00704E50 /* LoginVM.swift */,
+				A928F08F2518D0CF00704E50 /* HomeVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A928F0912518D0F600704E50 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A9D6A8EC25026BE900180A49 /* Assets.xcassets */,
+				A9D6A8E625026BE400180A49 /* Main.storyboard */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A9773EBD25199DE3000A51D4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A9773EBE25199DF8000A51D4 /* Protocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		A9CA0D49250BBAD6009019AC /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -71,20 +103,12 @@
 		A9CA0D4A250BBAE0009019AC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A9D6A8E625026BE400180A49 /* Main.storyboard */,
-				A9D6A8EC25026BE900180A49 /* Assets.xcassets */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		A9CA0D4B250BBAF1009019AC /* Controller */ = {
-			isa = PBXGroup;
-			children = (
+				A928F0912518D0F600704E50 /* Common */,
 				A9D6A8E425026BE400180A49 /* ViewController.swift */,
 				A90480C725182E3700265362 /* HomeViewController.swift */,
 				A90480C925182E4700265362 /* LoginViewController.swift */,
 			);
-			path = Controller;
+			name = View;
 			sourceTree = "<group>";
 		};
 		A9D6A8D425026BE400180A49 = {
@@ -108,7 +132,8 @@
 		A9D6A8DF25026BE400180A49 /* FoodBook */ = {
 			isa = PBXGroup;
 			children = (
-				A9CA0D4B250BBAF1009019AC /* Controller */,
+				A9773EBD25199DE3000A51D4 /* Protocols */,
+				A928F08C2518D09F00704E50 /* ViewModel */,
 				A9CA0D4A250BBAE0009019AC /* View */,
 				A9CA0D49250BBAD6009019AC /* Model */,
 				A9D6A8F8250270C600180A49 /* WebService */,
@@ -254,10 +279,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A90480CA25182E4700265362 /* LoginViewController.swift in Sources */,
+				A928F0902518D0CF00704E50 /* HomeVM.swift in Sources */,
 				A9D6A8FA250270F200180A49 /* ServiceParameter.swift in Sources */,
+				A9773EBF25199DF8000A51D4 /* Protocols.swift in Sources */,
 				A90480CC25182E5D00265362 /* UserModel.swift in Sources */,
 				A9D6A8EB25026BE400180A49 /* FoodBook.xcdatamodeld in Sources */,
 				A9D6A8E525026BE400180A49 /* ViewController.swift in Sources */,
+				A928F08E2518D0BA00704E50 /* LoginVM.swift in Sources */,
 				A9D6A8E125026BE400180A49 /* AppDelegate.swift in Sources */,
 				A90480C825182E3700265362 /* HomeViewController.swift in Sources */,
 				A9D6A8E325026BE400180A49 /* SceneDelegate.swift in Sources */,
