@@ -78,10 +78,31 @@
 		A928F0912518D0F600704E50 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A9D6A8F125026BE900180A49 /* Info.plist */,
+				A9D6A8E225026BE400180A49 /* SceneDelegate.swift */,
+				A9D6A8E025026BE400180A49 /* AppDelegate.swift */,
 				A9D6A8EC25026BE900180A49 /* Assets.xcassets */,
 				A9D6A8E625026BE400180A49 /* Main.storyboard */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		A9536103251AAE76006DDBEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9536100251A781E006DDBEF /* SignUpViewController.swift */,
+				A90480C925182E4700265362 /* LoginViewController.swift */,
+				A90480C725182E3700265362 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9536104251AAE90006DDBEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A90480CB25182E5D00265362 /* UserModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A9773EBD25199DE3000A51D4 /* Protocols */ = {
@@ -90,25 +111,6 @@
 				A9773EBE25199DF8000A51D4 /* Protocols.swift */,
 			);
 			path = Protocols;
-			sourceTree = "<group>";
-		};
-		A9CA0D49250BBAD6009019AC /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				A90480CB25182E5D00265362 /* UserModel.swift */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		A9CA0D4A250BBAE0009019AC /* View */ = {
-			isa = PBXGroup;
-			children = (
-				A928F0912518D0F600704E50 /* Common */,
-				A90480C725182E3700265362 /* HomeViewController.swift */,
-				A90480C925182E4700265362 /* LoginViewController.swift */,
-				A9536100251A781E006DDBEF /* SignUpViewController.swift */,
-			);
-			name = View;
 			sourceTree = "<group>";
 		};
 		A9D6A8D425026BE400180A49 = {
@@ -132,15 +134,13 @@
 		A9D6A8DF25026BE400180A49 /* FoodBook */ = {
 			isa = PBXGroup;
 			children = (
+				A9536104251AAE90006DDBEF /* Model */,
+				A9536103251AAE76006DDBEF /* View */,
+				A928F0912518D0F600704E50 /* Common */,
 				A9773EBD25199DE3000A51D4 /* Protocols */,
 				A928F08C2518D09F00704E50 /* ViewModel */,
-				A9CA0D4A250BBAE0009019AC /* View */,
-				A9CA0D49250BBAD6009019AC /* Model */,
 				A9D6A8F8250270C600180A49 /* WebService */,
-				A9D6A8E025026BE400180A49 /* AppDelegate.swift */,
-				A9D6A8E225026BE400180A49 /* SceneDelegate.swift */,
 				A9D6A8EE25026BE900180A49 /* LaunchScreen.storyboard */,
-				A9D6A8F125026BE900180A49 /* Info.plist */,
 				A9D6A8E925026BE400180A49 /* FoodBook.xcdatamodeld */,
 			);
 			path = FoodBook;
@@ -434,7 +434,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FoodBook/Info.plist;
+				INFOPLIST_FILE = FoodBook/Common/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +452,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FoodBook/Info.plist;
+				INFOPLIST_FILE = FoodBook/Common/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
