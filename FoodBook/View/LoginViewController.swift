@@ -21,9 +21,13 @@ class LoginViewController: UIViewController {
 
     
     @IBAction func btnLogin(_ sender: Any) {
-        let em = txtFieldUsuario.text!
-        let se = txtFieldSenha.text!
-        login.realizarLogin(email: em, senha: se)
+        let email = txtFieldUsuario.text!
+        let senha = txtFieldSenha.text!
+        if(email != "" && senha != ""){
+            login.realizarLogin(email: email, senha: senha)
+        }else{
+            print("EXISTE ALGO DE ERRADO")
+        }
     }
     
     @IBAction func btnCadastrar(_ sender: Any) {

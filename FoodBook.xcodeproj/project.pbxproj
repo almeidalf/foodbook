@@ -13,6 +13,7 @@
 		A928F08E2518D0BA00704E50 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A928F08D2518D0BA00704E50 /* LoginVM.swift */; };
 		A928F0902518D0CF00704E50 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A928F08F2518D0CF00704E50 /* HomeVM.swift */; };
 		A9536101251A781E006DDBEF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9536100251A781E006DDBEF /* SignUpViewController.swift */; };
+		A9536107251AD0B3006DDBEF /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9536106251AD0B3006DDBEF /* UserDefaults.swift */; };
 		A9773EBF25199DF8000A51D4 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9773EBE25199DF8000A51D4 /* Protocols.swift */; };
 		A9D6A8E125026BE400180A49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D6A8E025026BE400180A49 /* AppDelegate.swift */; };
 		A9D6A8E325026BE400180A49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D6A8E225026BE400180A49 /* SceneDelegate.swift */; };
@@ -33,6 +34,7 @@
 		A928F08D2518D0BA00704E50 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		A928F08F2518D0CF00704E50 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 		A9536100251A781E006DDBEF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		A9536106251AD0B3006DDBEF /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		A9773EBE25199DF8000A51D4 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		A9D6A8DD25026BE400180A49 /* FoodBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D6A8E025026BE400180A49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 		A928F0912518D0F600704E50 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A9536105251AD099006DDBEF /* UserDefaults */,
 				A9D6A8F125026BE900180A49 /* Info.plist */,
 				A9D6A8E225026BE400180A49 /* SceneDelegate.swift */,
 				A9D6A8E025026BE400180A49 /* AppDelegate.swift */,
@@ -103,6 +106,14 @@
 				A90480CB25182E5D00265362 /* UserModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A9536105251AD099006DDBEF /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				A9536106251AD0B3006DDBEF /* UserDefaults.swift */,
+			);
+			path = UserDefaults;
 			sourceTree = "<group>";
 		};
 		A9773EBD25199DE3000A51D4 /* Protocols */ = {
@@ -286,6 +297,7 @@
 				A90480CC25182E5D00265362 /* UserModel.swift in Sources */,
 				A9D6A8EB25026BE400180A49 /* FoodBook.xcdatamodeld in Sources */,
 				A928F08E2518D0BA00704E50 /* LoginVM.swift in Sources */,
+				A9536107251AD0B3006DDBEF /* UserDefaults.swift in Sources */,
 				A9D6A8E125026BE400180A49 /* AppDelegate.swift in Sources */,
 				A90480C825182E3700265362 /* HomeViewController.swift in Sources */,
 				A9D6A8E325026BE400180A49 /* SceneDelegate.swift in Sources */,
@@ -439,6 +451,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.FoodBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -457,6 +470,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.FoodBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

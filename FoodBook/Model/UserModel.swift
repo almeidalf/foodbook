@@ -7,8 +7,6 @@
 //
 
 import Foundation
-
-class UserModel {
     
 struct UsuarioLoginResponse: Decodable {
     var token: String
@@ -34,5 +32,4 @@ struct UsuarioCadastro: Decodable {
         self.email = email
         self.senha = senha
     }
-}
 }
