@@ -13,9 +13,13 @@ import UIKit
 class LoginVM  {
     
     let defaults = UserDefaults.standard
+
     
-    func realizarLogin(email:String, senha:String){
-        Alamofire.request(ServicoParametro.SERVICE_LOGIN, method: .post, parameters: ["email":email,"senha":senha], encoding: JSONEncoding.default)
+    func realizarLogin(_ email:String,_ senha: String){
+        Alamofire.request(ServicoParametro.SERVICE_LOGIN,
+                          method: .post,
+                          parameters: ["email":email,"senha":senha],
+                          encoding: JSONEncoding.default)
             .validate(statusCode: 200..<300)
             .responseData { response in
                 switch response.result {
@@ -35,8 +39,8 @@ class LoginVM  {
     }
     
     func enviarInformacoes(email: String, senha: String) {
-        if(email != "" && senha != ""){
-            realizarLogin(email: email, senha: senha)
+        if(email != ""){
+            realizarLogin(email,senha)
         }else{
             print("Ocorreu um erro inesperado na passagem de dados")
         }
@@ -47,7 +51,5 @@ class LoginVM  {
         let token = valor.token
         let expiration = valor.expiration
         
-        //        defaults.set(token, forKey: Keys.USER_TOKEN)
-        //        defaults.set(expiration, forKey: Keys.DATE_TOKEN)
     }
 }

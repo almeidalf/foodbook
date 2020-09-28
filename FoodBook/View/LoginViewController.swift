@@ -21,7 +21,6 @@ class LoginViewController: UIViewController {
         
     }
 
-    
     @IBAction func btnLogin(_ sender: Any) {
         loginViewModel.enviarInformacoes(email: txtFieldUsuario.text!, senha: txtFieldSenha.text!)
     }

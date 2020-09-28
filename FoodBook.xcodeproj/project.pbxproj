@@ -10,6 +10,11 @@
 		A90480C825182E3700265362 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90480C725182E3700265362 /* HomeViewController.swift */; };
 		A90480CA25182E4700265362 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90480C925182E4700265362 /* LoginViewController.swift */; };
 		A90480CC25182E5D00265362 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90480CB25182E5D00265362 /* UserModel.swift */; };
+		A919E2AC251FE79000276EB5 /* SignupVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A919E2AB251FE79000276EB5 /* SignupVM.swift */; };
+		A919E2AF251FFE1E00276EB5 /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A919E2AE251FFE1E00276EB5 /* StatusCode.swift */; };
+		A919E2B42520F8C000276EB5 /* CellReceitas.swift in Sources */ = {isa = PBXBuildFile; fileRef = A919E2B22520F8C000276EB5 /* CellReceitas.swift */; };
+		A919E2B52520F8C000276EB5 /* CellReceitas.xib in Resources */ = {isa = PBXBuildFile; fileRef = A919E2B32520F8C000276EB5 /* CellReceitas.xib */; };
+		A919E2B82520FD1300276EB5 /* ReceitasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A919E2B72520FD1200276EB5 /* ReceitasModel.swift */; };
 		A928F08E2518D0BA00704E50 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A928F08D2518D0BA00704E50 /* LoginVM.swift */; };
 		A928F0902518D0CF00704E50 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A928F08F2518D0CF00704E50 /* HomeVM.swift */; };
 		A9536101251A781E006DDBEF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9536100251A781E006DDBEF /* SignUpViewController.swift */; };
@@ -31,6 +36,11 @@
 		A90480C725182E3700265362 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A90480C925182E4700265362 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A90480CB25182E5D00265362 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		A919E2AB251FE79000276EB5 /* SignupVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVM.swift; sourceTree = "<group>"; };
+		A919E2AE251FFE1E00276EB5 /* StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCode.swift; sourceTree = "<group>"; };
+		A919E2B22520F8C000276EB5 /* CellReceitas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellReceitas.swift; sourceTree = "<group>"; };
+		A919E2B32520F8C000276EB5 /* CellReceitas.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellReceitas.xib; sourceTree = "<group>"; };
+		A919E2B72520FD1200276EB5 /* ReceitasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceitasModel.swift; sourceTree = "<group>"; };
 		A928F08D2518D0BA00704E50 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		A928F08F2518D0CF00704E50 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 		A9536100251A781E006DDBEF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -68,11 +78,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A919E2B12520F7EA00276EB5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A919E2B22520F8C000276EB5 /* CellReceitas.swift */,
+				A919E2B32520F8C000276EB5 /* CellReceitas.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		A928F08C2518D09F00704E50 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				A928F08D2518D0BA00704E50 /* LoginVM.swift */,
 				A928F08F2518D0CF00704E50 /* HomeVM.swift */,
+				A919E2AB251FE79000276EB5 /* SignupVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -93,6 +113,7 @@
 		A9536103251AAE76006DDBEF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A919E2B12520F7EA00276EB5 /* Cell */,
 				A9536100251A781E006DDBEF /* SignUpViewController.swift */,
 				A90480C925182E4700265362 /* LoginViewController.swift */,
 				A90480C725182E3700265362 /* HomeViewController.swift */,
@@ -104,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				A90480CB25182E5D00265362 /* UserModel.swift */,
+				A919E2AE251FFE1E00276EB5 /* StatusCode.swift */,
+				A919E2B72520FD1200276EB5 /* ReceitasModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -235,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9D6A8F025026BE900180A49 /* LaunchScreen.storyboard in Resources */,
+				A919E2B52520F8C000276EB5 /* CellReceitas.xib in Resources */,
 				A9D6A8ED25026BE900180A49 /* Assets.xcassets in Resources */,
 				A9D6A8E825026BE400180A49 /* Main.storyboard in Resources */,
 			);
@@ -289,6 +313,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A919E2B42520F8C000276EB5 /* CellReceitas.swift in Sources */,
+				A919E2AF251FFE1E00276EB5 /* StatusCode.swift in Sources */,
 				A9536101251A781E006DDBEF /* SignUpViewController.swift in Sources */,
 				A90480CA25182E4700265362 /* LoginViewController.swift in Sources */,
 				A928F0902518D0CF00704E50 /* HomeVM.swift in Sources */,
@@ -299,8 +325,10 @@
 				A928F08E2518D0BA00704E50 /* LoginVM.swift in Sources */,
 				A9536107251AD0B3006DDBEF /* UserDefaults.swift in Sources */,
 				A9D6A8E125026BE400180A49 /* AppDelegate.swift in Sources */,
+				A919E2AC251FE79000276EB5 /* SignupVM.swift in Sources */,
 				A90480C825182E3700265362 /* HomeViewController.swift in Sources */,
 				A9D6A8E325026BE400180A49 /* SceneDelegate.swift in Sources */,
+				A919E2B82520FD1300276EB5 /* ReceitasModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
