@@ -8,14 +8,11 @@
 
 import Foundation
 
-struct ListaReceitas: Decodable {
-    var receita: [Receita]
-}
-
-struct Receita: Decodable {
+struct ReceitaResponse: Decodable {
     var id: Int
     var titulo: String
     var descricao: String
     var ingredientes: [String]
     var modoPreparo: [String]
 }
+

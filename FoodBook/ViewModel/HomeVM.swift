@@ -11,8 +11,9 @@ import Alamofire
 
 
 class HomeVM {
+    var teste : [ReceitaResponse]?
     
-    func buscarTodasReceitas(){
+    func buscarTodasReceitas() {
         Alamofire.request(ServicoParametro.SERVICE_BuscarTodasReceitas,
                           method: .get,
                           encoding: JSONEncoding.default)
@@ -25,7 +26,8 @@ class HomeVM {
                     do{
                         let decoder = JSONDecoder()
                         decoder.keyDecodingStrategy = .convertFromSnakeCase
-                        let result = try decoder.decode(UsuarioLoginResponse.self, from: data)
+                        let result = try decoder.decode([ReceitaResponse].self, from: data)
+                        self.teste = result
                     }catch{
                         print(error)
                     }
