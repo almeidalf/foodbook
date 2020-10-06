@@ -48,9 +48,8 @@ extension HomeViewController: UITableViewDataSource{
         if let receita = homeViewModel.teste{
             cell.lblTituloReceita.text = receita[indexPath.row].titulo
             cell.lblDescricao.text = receita[indexPath.row].descricao
+            cell.imagemReceita.image = UIImage(named: "hamburger_2")
         }
-        
-        
         return cell
     }
 }
